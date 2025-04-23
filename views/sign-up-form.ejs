@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <form action="/sign-up" method="POST">
+    <label for="first_name">First Name</label>
+    <input id="first_name" name="first_name" type="text" required />
+
+    <label for="last_name">Last Name</label>
+    <input id="last_name" name="last_name" type="text" required />
+
+    <label for="username">Email</label>
+    <input id="username" name="username" type="email" required />
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" required />
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input id="confirmPassword" name="confirmPassword" type="password" required />
+
+    <button type="submit">Sign Up</button>
+  </form>
+  <p><a href="/">Back to Home</a></p>
+  <script src="/theme-toggle.js"></script>
+</body>
+</html>

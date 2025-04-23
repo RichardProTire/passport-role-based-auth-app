@@ -1,0 +1,172 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 2rem;
+    background: #f4f4f4;
+    color: #333;
+}
+  
+h1, h2, strong {
+    color: var(--text-color);
+}
+  
+  
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    max-width: 700px; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+  
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+  
+form button:hover {
+    background: #0056b3;
+}
+  
+.message-card {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* mobile friendly */
+}
+  
+.action-buttons a {
+    background: #007bff;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+  
+.action-buttons a:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
+/* Default light mode */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --card-bg: #fff;
+    --btn-bg: #007bff;
+    --btn-hover: #0056b3;
+}
+  
+/* Dark mode overrides */
+body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #eee;
+    --card-bg: #2c2c2c;
+    --btn-bg: #3b82f6;
+    --btn-hover: #2563eb;
+}
+  
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: system-ui, sans-serif;
+    margin: 2rem;
+}
+  
+form, .message-card {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+  
+form input, form textarea {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid #555;
+}
+  
+form button,
+  .action-buttons a {
+    background: var(--btn-bg);
+    color: white;
+}
+  
+form button:hover,
+  .action-buttons a:hover {
+    background: var(--btn-hover);
+}
+  /* admin-only delete form */
+.delete-form {
+    display: inline; 
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+  
+.delete-form button {
+    background: var(--btn-bg);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+  
+.delete-form button:hover {
+    background: var(--btn-hover);
+}
+
+.btn {
+    background: var(--btn-bg);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: var(--btn-hover);
+    text-decoration: none;
+  }
+  
